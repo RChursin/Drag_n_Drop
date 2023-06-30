@@ -87,18 +87,18 @@ function updateDOM() {
         createItemEl(progressListEl, 1, progressItem, index);
     });
     progressListArray = filterArray(progressListArray);
-    // Complete Column
-    completeListEl.textContent = '';
-    completeListArray.forEach((completeItem, index) => {
-        createItemEl(completeListEl, 2, completeItem, index);
-    });
-    completeListArray = filterArray(completeListArray);
     // On Hold Column
     onHoldListEl.textContent = '';
     onHoldListArray.forEach((onHoldItem, index) => {
-        createItemEl(onHoldListEl, 3, onHoldItem, index);
+        createItemEl(onHoldListEl, 2, onHoldItem, index);
     });
     onHoldListArray = filterArray(onHoldListArray);
+    // Complete Column
+    completeListEl.textContent = '';
+    completeListArray.forEach((completeItem, index) => {
+        createItemEl(completeListEl, 3, completeItem, index);
+    });
+    completeListArray = filterArray(completeListArray);
     // Don't run more than once, Update Local Storage
     updatedOnLoad = true;
     updateSavedColumns();
