@@ -6,7 +6,7 @@ html {
 }
 
 :root {
-    --column-1: #a2622d;
+    --column-1: #2bb7bb;
     --column-2: #1b6161;
     --column-3: #248224;
     --column-4: #a22d22;
@@ -14,7 +14,7 @@ html {
 
 body {
     margin: 0;
-    background: url("./trees.jpg");
+    background: url("./cat.png");
     background-size: cover;
     background-position: 50% 60%;
     background-attachment: fixed;
