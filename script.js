@@ -105,14 +105,14 @@ function updateDOM() {
 }
 
 // Update Item - Delete if necessary, or update Array value
-function updateItem(id, column) {
+function updateItem(index, column) {
     const selectedArray = listArrays[column];
     const selectedColumn = listColumns[column].children;
     if (!dragging) {
-        if (!selectedColumn[id].textContent) {
-            delete selectedArray[id];
+        if (!selectedColumn[index].textContent) {
+            delete selectedArray[index];
         } else {
-            selectedArray[id] = selectedColumn[id].textContent;
+            selectedArray[index] = selectedColumn[index].textContent;
         }
         updateDOM();
     }
